@@ -2,11 +2,149 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>barbershop-shop</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">ИНФОРМАЦИЯ</a>
+            </li>
+            <li>
+              <a href="#">НОВОСТИ</a>
+            </li>
+            <li>
+              <a href="#">ПРАЙС-ЛИСТ</a>
+            </li>
+            <li>
+              <a href="#">МАГАЗИН</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li> 
+          </ul>        
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">ВХОД</a>
+        </div> 
+      </div>  
+    </header> 
+    <main class="container">
+        <div class="shop_cat">
+          <h1 class="name_cat">СРЕДСТВА ДЛЯ УХОДА</h1>
+        </div>  
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="barbershop.ru">ГЛАВНАЯ</a>
+            </li>
+            <li>
+              <a href="barbershop-shop.ru">МАГАЗИН</a>
+            </li>
+            <li>
+              <a href="barbershop-shop.ru">СРЕДСТВА ДЛЯ УХОДА</a>
+            </li>  	
+          </ul>
+        </div>  
+        <div class="index_content">
+          <div class="index_content_left">  
+              <h2 class="index_content_title">ПРОИЗВОДИТЕЛИ</h2>
+                <form class="appointment_form">
+                  <label>BAXTER OF CALIFORNIA<input type="checkbox" checked></label>
+                  <label>MR NATTY<input type="checkbox"></label>
+                  <label>SUAVECITO<input type="checkbox" checked></label>
+                  <label>MALIN+GOETZ<input type="checkbox"></label>
+                  <label>MURRAY'S<input type="checkbox"></label>
+                  <label>AMERICAN CREW<input type="checkbox" checked></label>
+                </form>                                                                                     
+            </div>  
+          </div>
+          <div class="index_content">
+            <div class="index_content_left">  
+              <h2 class="index_content_title">ГРУППЫ ТОВАРОВ:</h2>
+            </div>
+            <form class="appointment_form">
+              <label>БРИТВАЕННЫЕ ПРИНАДЛЕЖНОСТИ<input type="radio" checked></label>
+              <label>СРЕДСТВА ДЛЯ УХОДА<input type="radio"></label>
+              <label>АКСЕССУАРЫ<input type="radio"></label>                 
+              <button class="btn" type="submit">ПОКАЗАТЬ</button>
+            </form>
+            <div class="container"> 
+              <section class="shop_item">
+                <a href="barbershop-item.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="barbershop-item.ru">Набор для путешествий «BAXTER OF CALIFORNIA»</a>
+                <p>2900 РУБ.</p> 
+                <button class="btn">КУПИТЬ</button>
+              </section>
+              <section class="shop_item">
+                <a href="barbershop-item.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="barbershop-item.ru">Увложняющий кондиционер «BAXTER OF CALIFORNIA»</a>
+                <p>750 РУБ.</p> 
+                <button class="btn">КУПИТЬ</button>
+              </section>
+              <section class="shop_item">
+                <a href="barbershop-item.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="barbershop-item.ru">Гель для волос «SUAVECITO»</a>
+                <p>290 РУБ.</p> 
+                <button class="btn">КУПИТЬ</button>
+              </section>
+              <section class="shop_item">
+                <a href="barbershop-item.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="barbershop-item.ru">Глина для укладки волос «AMERICAN CREW»</a>
+                <p>500 РУБ.</p> 
+                <button class="btn">КУПИТЬ</button>
+              </section>
+              <section class="shop_item">
+                <a href="barbershop-item.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="barbershop-item.ru">Гель для волос «AMERICAN CREW»</a>
+                <p>300 РУБ.</p> 
+                <button class="btn">КУПИТЬ</button>
+              </section>
+              <section class="shop_item">
+                <a href="barbershop-item.ru"><img src="http://placehold.it/150x100"></a>
+                <a href="barbershop-item.ru">Набор для бритья «BAXTER OF CALIFORNIA»</a>
+                <p>3900 РУБ.</p> 
+                <button class="btn">КУПИТЬ</button>
+              </section>  
+            </div>
+            <div class="pgn">
+              <ul>
+                <li>
+                  <a class="btn" href="#">1</a>
+                </li>
+                <li>
+                  <a class="btn" href="#">2</a>
+                </li>
+                <li>
+                  <a class="btn" href="#">3</a>
+                </li>
+                <li>
+                  <a class="btn" href="#">4</a>
+                </li>
+              </ul>     
+            </div>
+      </main>
+      <footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
